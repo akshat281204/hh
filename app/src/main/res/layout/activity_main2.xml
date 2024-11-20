@@ -16,6 +16,7 @@
         app:layout_constraintGuide_begin="232dp" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
         style="@style/cust_card_style"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -26,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="@color/white">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -34,7 +36,7 @@
             android:background="#FFFFFF">
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/username_su"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -50,7 +52,7 @@
                 android:padding="12dp"
                 android:textColor="#9EA1D4"
                 android:textColorHint="#9EA1D4"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextsu"
+                app:layout_constraintBottom_toTopOf="@+id/email_su"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +60,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
-                android:id="@+id/dob"
+                android:id="@+id/dob_su"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -76,10 +78,10 @@
                 android:textColorHint="#9EA1D4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+                app:layout_constraintTop_toBottomOf="@+id/username_su" />
 
             <EditText
-                android:id="@+id/phone_num"
+                android:id="@+id/phone_su"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -97,10 +99,10 @@
                 android:textColorHint="#9EA1D4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dob" />
+                app:layout_constraintTop_toBottomOf="@+id/dob_su" />
 
             <EditText
-                android:id="@+id/editTextTextPasswordsu"
+                android:id="@+id/password_su"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -118,10 +120,10 @@
                 android:textColorHint="#9EA1D4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextsu" />
+                app:layout_constraintTop_toBottomOf="@+id/email_su" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button_su"
                 android:layout_width="184dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="4dp"
@@ -131,11 +133,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordsu"
+                app:layout_constraintTop_toBottomOf="@+id/password_su"
                 app:layout_constraintVertical_bias="0.217" />
 
             <EditText
-                android:id="@+id/editTextTextsu"
+                android:id="@+id/email_su"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -153,7 +155,7 @@
                 android:textColorHint="#9EA1D4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/phone_num" />
+                app:layout_constraintTop_toBottomOf="@+id/phone_su" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -178,7 +180,9 @@
                     android:layout_weight="0"
                     android:text="Login"
                     android:textColor="#9EA1D4" />
+
             </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -188,6 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="18dp"
+        android:background="@drawable/back_layt"
         android:clickable="true"
         android:tint="#000000"
         app:backgroundTint="@color/white"

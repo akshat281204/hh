@@ -20,14 +20,15 @@
         style="@style/cust_card_style"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:outlineAmbientShadowColor="@color/black"
         app:cardBackgroundColor="@color/white"
+        app:cardElevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:layout_constraintVertical_bias="0.0"
-        app:cardElevation="15dp"
-        android:outlineAmbientShadowColor="@color/black">
+        app:rippleColor="@color/white">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -42,10 +43,10 @@
                 android:text="Forgot Password?"
                 android:textColor="#9EA1D4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/password_log" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/password_log"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -63,10 +64,10 @@
                 android:textColorHint="#9EA1D4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+                app:layout_constraintTop_toBottomOf="@+id/email_log" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button_log"
                 android:layout_width="184dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="4dp"
@@ -75,11 +76,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                app:layout_constraintTop_toBottomOf="@+id/password_log"
                 app:layout_constraintVertical_bias="0.217" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/email_log"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -100,6 +101,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
@@ -123,22 +125,10 @@
                     android:text="Sign Up"
                     android:textColor="#9EA1D4" />
             </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/backbtn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="18dp"
-        android:clickable="true"
-        android:tint="#000000"
-        app:backgroundTint="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_btn" />
 
     <ImageView
         android:id="@+id/imageView"

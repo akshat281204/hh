@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "826117042567",
-    "project_id": "hope-scan-5cdd6",
-    "storage_bucket": "hope-scan-5cdd6.firebasestorage.app"
+    "project_number": "642173077847",
+    "project_id": "hope-scan-333c8",
+    "storage_bucket": "hope-scan-333c8.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:826117042567:android:a1bebba36f2f20ec1c2322",
+        "mobilesdk_app_id": "1:642173077847:android:6f9f3771994affc4f29612",
         "android_client_info": {
           "package_name": "com.example.cancerdetection"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCfbLyNlJXRcyBHqXSS6rr2V7ra-UniMvE"
+          "current_key": "AIzaSyBnJ8YCzeHr_gln2gJVsAvJc3aZy7HOtYQ"
         }
       ],
       "services": {
