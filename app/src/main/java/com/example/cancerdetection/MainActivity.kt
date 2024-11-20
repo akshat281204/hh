@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
     private fun login(email: String,password: String){
         auth.signInWithEmailAndPassword(email,password).addOnCompleteListener{ task ->
             if(task.isSuccessful){
-                // FETCHING USER NAME
+                // FETCHING USER NAME FROM DATABASE
                 val userid=FirebaseAuth.getInstance().currentUser!!.uid
                 val ref=db.collection("user").document(userid)
                 ref.get().addOnSuccessListener{
