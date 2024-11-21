@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\drawable\\date.xml"
     },
     {
+        "merged": "com.example.cancerdetection.app-debug-57:/drawable_pass_hidden.xml.flat",
+        "source": "com.example.cancerdetection.app-main-59:/drawable/pass_hidden.xml"
+    },
+    {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
@@ -34,10 +38,6 @@
     {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\drawable_user_icn.xml.flat",
         "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\drawable\\user_icn.xml"
-    },
-    {
-        "merged": "com.example.cancerdetection.app-debug-57:/layout_activity_home.xml.flat",
-        "source": "com.example.cancerdetection.app-main-59:/layout/activity_home.xml"
     },
     {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -70,6 +70,14 @@
     {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\layout_fragment_first.xml.flat",
         "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\font_monst_font.ttf.flat",
+        "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\font\\monst_font.ttf"
+    },
+    {
+        "merged": "com.example.cancerdetection.app-debug-57:/layout_activity_main.xml.flat",
+        "source": "com.example.cancerdetection.app-main-59:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\layout_activity_home.xml.flat",
@@ -146,6 +154,10 @@
     {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\drawable_lock_icn.xml.flat",
         "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\drawable\\lock_icn.xml"
+    },
+    {
+        "merged": "com.example.cancerdetection.app-debug-57:/drawable_pass_shown.xml.flat",
+        "source": "com.example.cancerdetection.app-main-59:/drawable/pass_shown.xml"
     },
     {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-debug-57:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",

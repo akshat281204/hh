@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -53,6 +54,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final EditText passwordLog;
 
   @NonNull
+  public final ProgressBar progressLogin;
+
+  @NonNull
   public final TextView sign;
 
   @NonNull
@@ -62,7 +66,8 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull MaterialCardView cardLogin, @NonNull EditText emailLog, @NonNull TextView forgot,
       @NonNull Guideline guideline, @NonNull ImageView imageView,
       @NonNull LinearLayout linearLayout, @NonNull ConstraintLayout main,
-      @NonNull EditText passwordLog, @NonNull TextView sign, @NonNull TextView textView3) {
+      @NonNull EditText passwordLog, @NonNull ProgressBar progressLogin, @NonNull TextView sign,
+      @NonNull TextView textView3) {
     this.rootView = rootView;
     this.buttonLog = buttonLog;
     this.cardLogin = cardLogin;
@@ -73,6 +78,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.linearLayout = linearLayout;
     this.main = main;
     this.passwordLog = passwordLog;
+    this.progressLogin = progressLogin;
     this.sign = sign;
     this.textView3 = textView3;
   }
@@ -154,6 +160,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress_login;
+      ProgressBar progressLogin = ViewBindings.findChildViewById(rootView, id);
+      if (progressLogin == null) {
+        break missingId;
+      }
+
       id = R.id.sign;
       TextView sign = ViewBindings.findChildViewById(rootView, id);
       if (sign == null) {
@@ -167,7 +179,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, buttonLog, cardLogin, emailLog,
-          forgot, guideline, imageView, linearLayout, main, passwordLog, sign, textView3);
+          forgot, guideline, imageView, linearLayout, main, passwordLog, progressLogin, sign,
+          textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

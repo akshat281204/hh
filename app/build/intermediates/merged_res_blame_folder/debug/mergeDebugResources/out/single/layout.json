@@ -20,11 +20,11 @@
         "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\layout\\fragment_second.xml"
     },
     {
-        "merged": "com.example.cancerdetection.app-mergeDebugResources-56:/layout/activity_home.xml",
-        "source": "com.example.cancerdetection.app-main-59:/layout/activity_home.xml"
-    },
-    {
         "merged": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-mergeDebugResources-56:\\layout\\content_main.xml",
         "source": "C:\\Users\\Akshat\\.gradle\\daemon\\8.7\\com.example.cancerdetection.app-main-59:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "com.example.cancerdetection.app-mergeDebugResources-56:/layout/activity_main.xml",
+        "source": "com.example.cancerdetection.app-main-59:/layout/activity_main.xml"
     }
 ]

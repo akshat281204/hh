@@ -54,6 +54,7 @@ class MainActivity2 : AppCompatActivity() {
         val passfield=findViewById<EditText>(R.id.password_su)
         val but_su=findViewById<Button>(R.id.button_su)
         val back=findViewById<FloatingActionButton>(R.id.back2)
+        val prog=findViewById<ProgressBar>(R.id.progress_signup)
 
         back.setOnClickListener{
             finish()
@@ -67,9 +68,11 @@ class MainActivity2 : AppCompatActivity() {
             val password=passfield.text.toString()
 
             if(name.isNotEmpty() && dob.isNotEmpty() && phone.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()){
+                prog.visibility=View.VISIBLE
                 register(name,dob,phone,email,password)
             }
             else{
+                prog.visibility=View.INVISIBLE
                 Toast.makeText(this,"Please fill all the fields",Toast.LENGTH_SHORT).show()
             }
         }
@@ -81,8 +84,10 @@ class MainActivity2 : AppCompatActivity() {
     }
     // REGISTER EMAIL AND PASSWORD FOR LOGIN
     fun register(name: String, dob: String, phone:String, email: String, password: String){
+        val prog=findViewById<ProgressBar>(R.id.progress_signup)
         auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{
             if(it.isSuccessful){
+                prog.visibility=View.VISIBLE
                 // ADD VALUE TO THE FIRESTORE DATABASE
                 val userMap= hashMapOf(
                     "name" to name,
@@ -94,13 +99,16 @@ class MainActivity2 : AppCompatActivity() {
                 db.collection("user").document(userId).set(userMap)
                     .addOnCompleteListener{
                         if(it.isSuccessful){
+                            prog.visibility=View.INVISIBLE
                             Toast.makeText(this, "User Registered Successfully", Toast.LENGTH_SHORT).show()
                         }
                         else{
+                            prog.visibility=View.INVISIBLE
                             Toast.makeText(this, "User Not Registered", Toast.LENGTH_SHORT).show()
                         }
                     }
                     .addOnFailureListener{exception->
+                        prog.visibility=View.INVISIBLE
                         Toast.makeText(this,"Error: ${exception.message}",Toast.LENGTH_LONG).show()
                     }
                 val userid=auth.currentUser?.uid
@@ -111,13 +119,16 @@ class MainActivity2 : AppCompatActivity() {
                         Toast.makeText(this,"Registration Complete",Toast.LENGTH_SHORT).show()
                         val home_intent=Intent(this, Home_act::class.java)
                         startActivity(home_intent)
+                        prog.visibility=View.INVISIBLE
                     }
                     else{
+                        prog.visibility=View.INVISIBLE
                         Toast.makeText(this,"Failed to save user data",Toast.LENGTH_SHORT).show()
                     }
                 }
             }
             else{
+                prog.visibility=View.INVISIBLE
                 Toast.makeText(this,"Registration failed",Toast.LENGTH_SHORT).show()
             }
         }

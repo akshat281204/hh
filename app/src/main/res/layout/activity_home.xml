@@ -13,7 +13,7 @@
         android:layout_width="53dp"
         android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user" />
@@ -27,15 +27,22 @@
 
     <TextView
         android:id="@+id/user_welc"
-        android:layout_width="268dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="262dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/monst_font"
+        android:gravity="left"
+        android:shadowColor="#454545"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_login"

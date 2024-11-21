@@ -13,9 +13,12 @@ drawable email_icn
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable lock_icn
+drawable pass_hidden
+drawable pass_shown
 drawable phone_icn
 drawable user
 drawable user_icn
+font monst_font
 id FirstFragment
 id SecondFragment
 id action_FirstFragment_to_SecondFragment
@@ -43,6 +46,8 @@ id nav_host_fragment_content_main
 id password_log
 id password_su
 id phone_su
+id progress_login
+id progress_signup
 id sign
 id textView3
 id textView4
