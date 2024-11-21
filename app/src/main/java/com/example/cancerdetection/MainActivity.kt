@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
                         val name= it.data?.get("name")?.toString()
                         Toast.makeText(this,"Welcome $name",Toast.LENGTH_SHORT).show()
                         val home_intent=Intent(this,Home_act::class.java)
+                        home_intent.putExtra("name",name)
                         startActivity(home_intent)
                     }
                 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">642173077847</string>
+    <string name="google_api_key" translatable="false">AIzaSyBnJ8YCzeHr_gln2gJVsAvJc3aZy7HOtYQ</string>
+    <string name="google_app_id" translatable="false">1:642173077847:android:6f9f3771994affc4f29612</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBnJ8YCzeHr_gln2gJVsAvJc3aZy7HOtYQ</string>
+    <string name="google_storage_bucket" translatable="false">hope-scan-333c8.firebasestorage.app</string>
+    <string name="project_id" translatable="false">hope-scan-333c8</string>
+</resources>
